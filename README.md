@@ -5,10 +5,15 @@ This repository contains the dataset release to accompany the CLEF 2019 paper ti
 
 Please, use the following citation
 
-```latex
+```bibtex
 @inproceedings{clef2019prosody,
   title={{Using Audio Transformations to Improve Comprehension in Voice Question Answering}},
-  author = {Aleksandr Chuklin and Aliaksei Severyn and Johanne R. Trippas and Enrique Alfonseca and Hanna Silen and Damiano Spina},
+  author = {Aleksandr Chuklin and
+            Aliaksei Severyn and
+            Johanne R. Trippas and
+            Enrique Alfonseca and
+            Hanna Silen and
+            Damiano Spina},
   booktitle={{Conference and Labs of the Evaluation Forum (CLEF)}},
   year={2019},
   location = {Lugano, Switzerland}
