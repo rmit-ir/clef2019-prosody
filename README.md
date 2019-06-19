@@ -22,16 +22,11 @@ Please, use the following citation
 
 You may also refer to the extended version on ArXiv: https://arxiv.org/abs/1806.03957
 
-## Example Audio
-
-* Emphasis (Google TTS):
-<audio controls="controls">
-      <source src="media/Google_emphasis.mp3" type="audio/ogg"></source>
-      <source src="{{mp3_url}}" type="audio/mpeg"></source>
-      <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
-    Your browser does not support the HTML5 Audio element or MP3 playback.
-  </audio>
 
 ## Rating Interface for Crowd Workers
 
 ![rating-intreface](media/rating-intreface.png)
+
+## Example Audios
+
+See `media/` folder for some example. You may also download more files by following the links in `data/crowdsourcing_ratings.csv`.
