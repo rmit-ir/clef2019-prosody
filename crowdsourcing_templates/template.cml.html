@@ -1,0 +1,90 @@
+<div class="html-element-wrapper">
+
+  <p>An
+    <strong>eyes-free voice assistant</strong> is an electronic device that can understand voice queries from a user and provide audio responses to that query. Eyes-free voice assistants that you may know include
+    <strong>Amazon Alexa</strong> or
+    <strong>Google Home</strong>
+  </p>
+  <p>In this task, you will first read a query and then you will listen to a corresponding answer in an audio file from the eyes-free voice assistant. Your job is to provide feedback about:
+    <ol>
+      <li>
+        <span style="color: rgb(97, 189, 109);">
+          <strong>the answer to a query in audio,</strong>
+        </span>
+      </li>
+      <li>
+        <span style="color: rgb(44, 130, 201);">
+          <strong>the quality of the audio.</strong>
+        </span>
+      </li>
+    </ol>
+  </p>
+
+  <div class="well">
+    <h3>User's query:
+      <span class="query">[{{question}}]</span>
+    </h3>
+    <br />
+    <h3>Eyes-free voice assistant's audio response:</h3>
+    <audio controls="controls">
+      <source src="{{ogg_url}}" type="audio/ogg"></source>
+      <source src="{{mp3_url}}" type="audio/mpeg"></source>
+      <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
+    Your browser does not support the HTML5 Audio element. You can't complete this task
+  </audio>
+  </div>
+</div>
+
+<br />
+
+<div class="well">
+  <cml:ratings name="needs_met" label="[1a] Does the audio response from the eyes-free voice assistant answer the user's query?" validates="required" gold="true" class="horizontal" points="5">
+    <cml:rating label="No, it doesn't"></cml:rating>
+    <cml:rating label="Slightly"></cml:rating>
+    <cml:rating label="Moderately"></cml:rating>
+    <cml:rating label="Highly"></cml:rating>
+    <cml:rating label="Yes, fully"></cml:rating>
+  </cml:ratings>
+
+  <cml:text name="short_answer" label="[1b] Type the &lt;u&gt;short&lt;/u&gt;   answer which you hear in the audio response as you hear it (or n/a if not   available)" validates="required minLength:2 maxLength:160" gold="true">
+    <cml:instructions>
+          Keep the answer as short as possible.
+      <br />
+          Use lowercase letters.
+      <br />
+          Check your spelling.
+    </cml:instructions>
+  </cml:text>
+</div>
+
+<br />
+
+
+<div class="well">
+  <cml:ratings name="length" label="[2a] Is the length of the full audio response appropriate?" validates="required" gold="true" class="horizontal" points="3">
+    <cml:rating label="Too short"></cml:rating>
+    <cml:rating label="OK"></cml:rating>
+    <cml:rating label="Too long"></cml:rating>
+  </cml:ratings>
+
+  <cml:ratings name="elocution" label="[2b] Were the words in the full audio response pronounced correctly with no awkward speech artefacts?" validates="required" gold="true" class="horizontal" points="3">
+    <cml:rating label="Bad"></cml:rating>
+    <cml:rating label="Moderate"></cml:rating>
+    <cml:rating label="Good"></cml:rating>
+  </cml:ratings>
+
+  <cml:ratings name="interruption" label="[2c] Are there any unexpected interruptions in the full audio response?" validates="required" gold="true" class="horizontal" points="3">
+    <cml:rating label="No"></cml:rating>
+    <cml:rating label="Yes"></cml:rating>
+  </cml:ratings>
+
+  <div class="well">
+    <cml:textarea class="textarea-wide" name="audio_feedback" label="[2d] What would you change to the audio to better identify the answer." default="Tell us how you would like to hear the response from the eyes-free voice assistant."></cml:textarea>
+  </div>
+</div>
+
+<!--
+<div class="well">
+  <cml:textarea class="textarea-wide" name="feedback" label="Please provide any feedback you might have." default="This task is a pilot run. We encourage you to make use of this text area to indicate any issues you encountered and comments that you may have."></cml:textarea>
+</div>
+-->
