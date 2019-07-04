@@ -22,10 +22,14 @@ Please, use the following citation
 
 You may also refer to the extended version on ArXiv: https://arxiv.org/abs/1806.03957
 
+## Input Data
+The data used for ratings comes from the [Stanford Question Answering Dataset  (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/) (distributed under the [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/legalcode) license).
 
 ## Rating Interface for Crowd Workers
 
 ![rating-intreface](media/rating-intreface.png)
+
+Experiments were performed under Ethics Application BSEH 10-14 at RMIT University.
 
 ## Example Audios
 
